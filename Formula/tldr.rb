@@ -8,7 +8,7 @@ class Tldr < Formula
   depends_on "curl"
   def install
     system "cd src && make"
-    bin.install "tldr"
+    bin.install "src/tldr"
   end
 
   test do
