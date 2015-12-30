@@ -2,8 +2,8 @@ require "formula"
 
 class Tldr < Formula
   homepage "https://github.com/tldr-pages/tldr"
-  url "https://github.com/tldr-pages/tldr-cpp-client/archive/0.2.tar.gz"
-  sha1 "43c16961a87dc6e42a6227196c757e9980a4445e"
+  url "https://github.com/tldr-pages/tldr-cpp-client/archive/v1.0.tar.gz"
+  sha1 "8a2e1d4c4c56876ae99c89c2ce9b66b9638aea50"
 
   depends_on "curl"
   def install
