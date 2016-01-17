@@ -2,10 +2,11 @@ require "formula"
 
 class Tldr < Formula
   homepage "https://github.com/tldr-pages/tldr"
-  url "https://github.com/tldr-pages/tldr-cpp-client/archive/v1.0.tar.gz"
-  sha1 "8a2e1d4c4c56876ae99c89c2ce9b66b9638aea50"
+  url "https://github.com/tldr-pages/tldr-cpp-client/archive/v1.1.0.tar.gz"
+  sha1 "7323a59434d5c3f910e183e77b62c941b2834869"
 
   depends_on "curl"
+  depends_on "libzip"
   def install
     system "cd src && make"
     bin.install "src/tldr"
