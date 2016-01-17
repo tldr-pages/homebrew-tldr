@@ -10,6 +10,7 @@ class Tldr < Formula
 
   depends_on "curl"
   depends_on "libzip"
+  depends_on "pkg-config"
   def install
     system "cd src && make"
     bin.install "src/tldr"
