@@ -4,7 +4,7 @@ class Tldr < Formula
   homepage "https://github.com/tldr-pages/tldr"
 
   url "https://github.com/tldr-pages/tldr-cpp-client/archive/v1.1.0.tar.gz"
-  sha1 "7323a59434d5c3f910e183e77b62c941b2834869"
+  sha1 "5223b86952e1d6c34f3cd4bf827f8723c8751af7"
 
   head "https://github.com/tldr-pages/tldr-cpp-client.git"
 
