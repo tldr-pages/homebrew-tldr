@@ -7,6 +7,11 @@ This is the tap for Homebrew to install the `tldr` client via Homebrew.
 
 ```
 brew tap tldr-pages/tldr
+
+# To install the latest stable release
+brew install tldr
+
+# To install latest development version
 brew install tldr --HEAD
 ```
 
