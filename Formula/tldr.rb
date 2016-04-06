@@ -4,8 +4,8 @@ class Tldr < Formula
   homepage "https://github.com/tldr-pages/tldr"
   desc ""
 
-  url "https://github.com/tldr-pages/tldr-cpp-client/archive/v1.1.0.tar.gz"
-  sha256 "eed26fd5471963d63708e5142388d47f4619649070839dbfe1c46c7842975138"
+  url "https://github.com/tldr-pages/tldr-cpp-client/archive/v1.2.0.tar.gz"
+  sha256 "db2e70b3f4209c67b5b9896e052bf3d9e77570dcb04d0c9932776aa44cca9d3e"
 
   head "https://github.com/tldr-pages/tldr-cpp-client.git"
 
