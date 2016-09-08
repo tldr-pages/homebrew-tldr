@@ -9,9 +9,9 @@ class Tldr < Formula
 
   head "https://github.com/tldr-pages/tldr-cpp-client.git"
 
-  depends_on "curl"
-  depends_on "libzip"
-  depends_on "pkg-config"
+  depends_on "curl" => :build
+  depends_on "libzip" => :build
+  depends_on "pkg-config" => :build
   def install
     system "make", "DEBUG=-march=native -O2"
     bin.install "tldr"
