@@ -1,25 +1,20 @@
-require "formula"
-
 class Tldr < Formula
-  homepage "https://github.com/tldr-pages/tldr"
-  desc ""
-
-  url "https://github.com/tldr-pages/tldr-cpp-client/archive/v1.2.0.tar.gz"
-  sha256 "db2e70b3f4209c67b5b9896e052bf3d9e77570dcb04d0c9932776aa44cca9d3e"
-
+  desc "Simplified and community-driven man pages"
+  homepage "https://tldr-pages.github.io"
+  url "https://github.com/tldr-pages/tldr-cpp-client/archive/v1.3.0.tar.gz"
+  sha256 "6210ece3f5d8f8e55b404e2f6c84be50bfdde9f0d194a271bce751a3ed6141be"
   head "https://github.com/tldr-pages/tldr-cpp-client.git"
 
   depends_on "curl"
   depends_on "libzip"
   depends_on "pkg-config" => :build
+
   def install
-    system "make", "DEBUG=-march=native -O2"
-    bin.install "tldr"
-    man.mkpath
-    man1.install "man/tldr.1"
+    system "make"
+    system "make", "PREFIX=#{prefix}", "install"
   end
 
   test do
-    system "tldr tldr"
+    assert_match "brew", shell_output("#{bin}/tldr brew")
   end
 end
